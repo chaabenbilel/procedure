@@ -1,0 +1,33 @@
+ALGORITHM algorithm_name
+VAR
+    let n=3
+    v1,v2  : ARRAY_OF type[n];
+  INTEGER :  product;
+  ps :ARRAY_OF type[]
+
+BEGIN
+let n=3
+    function dotProduct(v1, v2){
+    
+    {
+   
+        let product = 0;
+   
+        
+        for (let i = 0; i < n; i++)
+            product = product + v1[i] * v2[i];
+        return product;
+    }
+   
+    function crossProduct(v1, v2,Ps)
+   
+    {
+   
+        Ps[0] = v1[1] * v2[2]
+                     - vect_A[2] * vect_B[1];
+        ps[1] = v1[2] * v2[0]
+                     - v1[0] * v2[2];
+        ps[2] = v1[0] * v2[1]
+                     - v1[1] * v2[0];
+    }
+END
